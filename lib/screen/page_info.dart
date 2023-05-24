@@ -95,26 +95,21 @@ class PlaceInfo extends StatelessWidget {
                 ),
               ],
             ),
-            Positioned(
-              child: GestureDetector(
-                onTap: () => Navigator.pop(context),
-                child: Container(
-                  height: screenHeight * .04,
-                  width: screenWidth * .13,
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(.6),
-                    borderRadius: BorderRadius.circular(3),
-                  ),
-                  child: Icon(
-                    Icons.arrow_back_rounded,
-                  ),
+            GestureDetector(
+              onTap: () => Navigator.pop(context),
+              child: Container(
+                height: screenHeight * .04,
+                width: screenWidth * .13,
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(.6),
+                  borderRadius: BorderRadius.circular(3),
+                ),
+                child: Icon(
+                  Icons.arrow_back_rounded,
                 ),
               ),
             ),
-            Positioned(
-              top: screenHeight * .9,
-              child: CustomButton(location: location),
-            ),
+            Positioned(bottom: 0, child: CustomButton(location: location)),
           ],
         ),
       ),

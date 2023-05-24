@@ -11,8 +11,8 @@ class CustomButton extends StatelessWidget {
     final screenWidth = screenSize.width;
     final screenHeight = screenSize.height;
     return Container(
-      height: screenHeight * .0658,
-      width: double.infinity,
+      height: screenHeight * .056,
+      width: screenWidth * 1,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.black,
